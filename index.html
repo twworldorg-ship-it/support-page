@@ -1,0 +1,118 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .binance-yellow { color: #f0b90b; }
+        
+        .card {
+            transition: all 0.25s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* MOBILE-FIRST FIXES */
+        .self-service-scroll {
+            scrollbar-width: none;
+        }
+        .self-service-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .welcome-text {
+                font-size: 2.25rem;
+            }
+            .card {
+                min-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0c14] text-white">
+
+    <!-- Top Warning Bar -->
+    <div class="bg-black py-2 text-center text-xs text-gray-400 border-b border-gray-800 px-4">
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-[#0f1117] sticky top-0 z-50 border-b border-gray-800">
+        <div class="max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Exact logo you requested -->
+            <div class="flex items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Binance_Logo.svg/1280px-Binance_Logo.svg.png" 
+                     class="h-9 w-auto">
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="document.getElementById('search-input').focus()" class="text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </button>
+                <a href="https://www.binance.com/en/login" target="_blank" 
+                   class="hidden md:block px-6 py-2 text-sm border border-gray-600 rounded-full hover:border-gray-400">Log In</a>
+                <a href="https://www.binance.com/en/register" target="_blank" 
+                   class="px-6 py-2 text-sm font-semibold bg-[#f0b90b] text-black rounded-full hover:bg-yellow-400">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-4 md:px-8 py-8">
+
+        <!-- Welcome -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-light">Welcome To</h1>
+            <div class="flex items-center justify-center gap-3 mt-2">
+                <h2 class="welcome-text text-5xl md:text-6xl font-bold tracking-tighter">Our Help Center</h2>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-3xl mx-auto mb-14">
+            <div class="bg-[#1e2026] border border-gray-700 focus-within:border-[#f0b90b] rounded-3xl px-6 py-5 flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl"></i>
+                <input id="search-input" 
+                       type="text" 
+                       placeholder="Search or ask question" 
+                       onkeyup="if(event.key === 'Enter') handleSearch(this.value)"
+                       class="flex-1 bg-transparent outline-none text-lg placeholder-gray-500">
+            </div>
+        </div>
+<!-- Need More Support -->
+        <div class="bg-[#1e2026] rounded-3xl p-8 mb-16">
+            <h3 class="text-2xl font-semibold mb-8">Need More Support?</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://tawk.to/chat/69e34cfac0e3ae1c3248de21/1jmfu9dld" target="_blank" class="flex gap-6 items-start bg-[#25282f] p-7 rounded-3xl hover:bg-[#2a2f38]">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-headset text-4xl text-blue-400"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-semibold text-lg">Chat Support</div>
+                        <p class="text-gray-400 text-sm mt-1">Feel free to reach out to us if you encounter any issues; our chat support team is available 24/7.</p>
+                        <span class="text-[#f0b90b] text-sm mt-6 inline-block">View more →</span>
+                    </div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69e34cfac0e3ae1c3248de21/1jmfu9dld';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+  
+    
